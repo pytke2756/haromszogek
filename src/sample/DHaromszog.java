@@ -43,7 +43,7 @@ public class DHaromszog {
             this.aOldal = aOldal;
         }
         else{
-            throw new Exception("A(z) 'a' oldal nem lehet nulla vagy negatív!");
+            throw new Exception(String.format("%d. sor: A(z) 'a' oldal nem lehet nulla vagy negatív!",this.sorSzama));
         }
 
     }
@@ -53,7 +53,7 @@ public class DHaromszog {
             this.bOldal = bOldal;
         }
         else{
-            throw new Exception("A(z) 'b' oldal nem lehet nulla vagy negatív!");
+            throw new Exception(String.format("%d. sor: A(z) 'b' oldal nem lehet nulla vagy negatív!",this.sorSzama));
         }
 
     }
@@ -63,7 +63,7 @@ public class DHaromszog {
             this.cOldal = cOldal;
         }
         else{
-            throw new Exception("A(z) 'c' oldal nem lehet nulla vagy negatív!");
+            throw new Exception(String.format("%d. sor: A(z) 'c' oldal nem lehet nulla vagy negatív!",this.sorSzama));
         }
 
     }
@@ -83,7 +83,7 @@ public class DHaromszog {
             return true;
         }
         else{
-            throw new Exception(String.format("%d. sor: A háromszöget nem lehet megszerkeszteni!"));
+            throw new Exception(String.format("%d. sor: A háromszöget nem lehet megszerkeszteni!",this.sorSzama));
         }
     }
 
@@ -92,7 +92,7 @@ public class DHaromszog {
             return true;
         }
         else{
-            throw new Exception(String.format("%d. sor: Az adatok nincsenek növekvő sorrendben!"));
+            throw new Exception(String.format("%d. sor: Az adatok nincsenek növekvő sorrendben!",this.sorSzama));
         }
     }
 
