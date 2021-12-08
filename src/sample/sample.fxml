@@ -28,7 +28,7 @@
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <ListView fx:id="lstviewDerekszoguHaromszogek" prefHeight="133.0" prefWidth="220.0" />
+                        <ListView fx:id="lstviewDerekszoguHaromszogek" onMouseClicked="#onListViewClick" prefHeight="133.0" prefWidth="220.0" />
                      </children>
                   </AnchorPane>
               </content>
@@ -42,6 +42,22 @@
                      <padding>
                         <Insets right="10.0" />
                      </padding>
+                     <children>
+                        <VBox layoutX="-1.0" layoutY="-2.0" prefHeight="134.0" prefWidth="320.0">
+                           <children>
+                              <Label fx:id="lblKerulet">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="20.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="lblTerulet">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="20.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
                   </AnchorPane>
               </content>
                <HBox.margin>
